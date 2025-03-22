@@ -12,6 +12,8 @@ Modules:
 - test.py: Evaluate the model
 - main.py: Run the full pipeline
 """
+import sys
+sys.dont_write_bytecode = True
 
 from data_loader import load_data
 from model import create_cnn
